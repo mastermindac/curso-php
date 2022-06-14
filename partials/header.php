@@ -27,6 +27,9 @@
     <script defer src="./static/js/welcome.js"></script>
   <?php endif ?>
 
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/92b62ee1cc.js" crossorigin="anonymous"></script>
+
   <title>Contacts App</title>
 </head>
 <body>

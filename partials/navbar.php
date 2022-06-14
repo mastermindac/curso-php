@@ -37,11 +37,14 @@
             </li>
           <?php endif ?>
         </ul>
+        <div class="p-2">
+          <i class="fa-solid fa-moon"></i>
         <?php if (isset($_SESSION["user"])): ?>
-          <div class="p-2">
-            <?= $_SESSION["user"]["email"] ?>
-          </div>
-        <?php endif ?>
+            <span>
+              <?= $_SESSION["user"]["email"] ?>
+            </span>
+            <?php endif ?>
+        </div>
       </div>
     </div>
   </div>
