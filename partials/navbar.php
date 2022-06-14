@@ -1,4 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<?php
+  $color = "light";
+?>
+<nav class="navbar navbar-expand-lg navbar-<?=$color?> bg-<?=$color?>">
   <div class="container-fluid">
     <a class="navbar-brand font-weight-bold" href="index.php">
       <img class="mr-2" src="./static/img/logo.png" />
@@ -37,8 +40,10 @@
             </li>
           <?php endif ?>
         </ul>
-        <div class="p-2">
-          <i class="fa-solid fa-moon"></i>
+        <div class="p-2" class="bg-<?=$color?>">
+          <button class = "rounded-circle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
         <?php if (isset($_SESSION["user"])): ?>
             <span>
               <?= $_SESSION["user"]["email"] ?>

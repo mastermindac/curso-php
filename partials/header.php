@@ -1,3 +1,4 @@
+<?php $color = "light" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +33,7 @@
 
   <title>Contacts App</title>
 </head>
-<body>
+<body class = "bg-<?=$color?>">
   <?php require "navbar.php" ?>
 
   
@@ -55,5 +56,5 @@
   <?php endif ?>
 
 
-  <main>
+  <main >
     <!-- Content Here -->
