@@ -1,6 +1,4 @@
-<?php
-  $color = "light";
-?>
+
 <nav class="navbar navbar-expand-lg navbar-<?=$color?> bg-<?=$color?>">
   <div class="container-fluid">
     <a class="navbar-brand font-weight-bold" href="index.php">
@@ -40,7 +38,7 @@
             </li>
           <?php endif ?>
         </ul>
-        <div class="p-2" class="bg-<?=$color?>">
+        <div class="p-2">
           <button class = "rounded-circle">
             <i class="fa-solid fa-moon"></i>
           </button>

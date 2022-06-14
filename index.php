@@ -1,10 +1,9 @@
 <?php 
 require "partials/header.php" ;
-$color = "light";
 ?>
 
 <div class="welcome d-flex align-items-center justify-content-center">
-  <div class="text-center">
+  <div class="text-center text-white">
     <h1>Store Your Contacts Now</h1>
     <a class="btn btn-lg btn-<?=$color?>" href="register.php">Get Started</a>
   </div>
