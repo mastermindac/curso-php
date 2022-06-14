@@ -3,7 +3,7 @@
 }
 
 .welcome {
-    background: url('/contacts-app_dark/static/img/background.jpg');
+    background: url('/contacts_app_dark/static/img/background.jpg');
     background-position: center center;
     background-size: cover;
 }
