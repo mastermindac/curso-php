@@ -39,9 +39,16 @@
           <?php endif ?>
         </ul>
         <div class="p-2">
-          <button class = "rounded-circle">
+        <?php if($color == "light"):?>
+          <a class = "border-dark btn rounded-circle " href = "dark.php?color=dark?">
             <i class="fa-solid fa-moon"></i>
-          </button>
+          </a>
+        <?php else:?>
+          <a class = "border-light btn rounded-circle " href = "light.php?color=light">
+            <i class="fa-solid fa-sun"></i>
+          </a>
+        <?php endif?>
+
         <?php if (isset($_SESSION["user"])): ?>
             <span>
               <?= $_SESSION["user"]["email"] ?>

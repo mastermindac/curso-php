@@ -1,4 +1,10 @@
-<?php $color = "light" ?>
+<?php 
+$styles = json_decode(file_get_contents("colors.json"), true);
+$color = $styles["color"];
+
+$path = parse_url($_SERVER["REQUEST_URI"],PHP_URL_PATH);
+$url = "http://$_SERVER[HTTP_HOST]$path";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
